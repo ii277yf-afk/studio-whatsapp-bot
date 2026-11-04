@@ -78,7 +78,7 @@ const STATUS_LABEL = {
   confirmed: "✅ مؤكد",
   rejected: "❌ مرفوض",
 };
-const DB_FILE = path.join(__dirname, "bookings.json");
+const DB_FILE = "/var/data/bookings.json";
 let bookings = [];
 try { bookings = JSON.parse(fs.readFileSync(DB_FILE, "utf8")); } catch { bookings = []; }
 // ترحيل الحجوزات القديمة (من النسخة اللي قبل كده) لتعتبر مؤكدة
