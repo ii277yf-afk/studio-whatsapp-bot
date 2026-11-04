@@ -1,0 +1,14 @@
+{
+  "name": "arah-qalbak-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env bot.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
